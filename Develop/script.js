@@ -2,6 +2,10 @@
 // the code isn't run until the browser has finished rendering all the elements
 // in the html.
 $(function () {
+
+  var schedule = false;
+  var now = moment().format('LLLL');
+
   // TODO: Add a listener for click events on the save button. This code should
   // use the id in the containing time-block as a key to save the user input in
   // local storage. HINT: What does `this` reference in the click listener
@@ -19,12 +23,61 @@ $(function () {
   // the values of the corresponding textarea elements. HINT: How can the id
   // attribute of each time-block be used to do this?
   //
-  
-  $(".saveBtn").click(function(){
+
+  // this displays the present time
+  var presentday = $('#PresentDay');
+  presentday.text(now);
+
+  var 
+
+
+
+
+
+
+
+
+
+  // setting the item in local storage
+
+  $(".saveBtn").click(function () {
+    console.log($(this).siblings("textarea").val())
+    localStorage.setItem("hour-8", $(this).siblings("textarea").val());
+
+    console.log($(this).siblings("textarea").val())
+    localStorage.setItem("hour-9", $(this).siblings("textarea").val());
+
     console.log($(this).siblings("textarea").val())
     localStorage.setItem("hour-10", $(this).siblings("textarea").val());
+
+    console.log($(this).siblings("textarea").val())
+    localStorage.setItem("hour-11", $(this).siblings("textarea").val());
+
+    console.log($(this).siblings("textarea").val())
+    localStorage.setItem("hour-12", $(this).siblings("textarea").val());
+
+    console.log($(this).siblings("textarea").val())
+    localStorage.setItem("hour-13", $(this).siblings("textarea").val());
+
+    console.log($(this).siblings("textarea").val())
+    localStorage.setItem("hour-14", $(this).siblings("textarea").val());
+
+    console.log($(this).siblings("textarea").val())
+    localStorage.setItem("hour-15", $(this).siblings("textarea").val());
+
+    console.log($(this).siblings("textarea").val())
+    localStorage.setItem("hour-16", $(this).siblings("textarea").val());
+
+    console.log($(this).siblings("textarea").val())
+    localStorage.setItem("hour-17", $(this).siblings("textarea").val());
+
+    console.log($(this).siblings("textarea").val())
+    localStorage.setItem("hour-18", $(this).siblings("textarea").val());
   });
+
   // TODO: Add code to display the current date in the header of the page.
 });
+
+
 
 //$(".col-8",".col-md-10", ".description")
