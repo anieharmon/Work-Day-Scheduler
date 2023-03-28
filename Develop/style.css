@@ -27,6 +27,13 @@ textarea {
   border-radius: 15px;
 }
 
+.display {
+  font-family:Arial, Helvetica, sans-serif;
+  font-weight: bolder;
+  text-transform: uppercase;
+}
+
+
 .row {
   border-top: 1px solid white;
 }
